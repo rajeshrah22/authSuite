@@ -1,0 +1,13 @@
+{
+  "name": "jwt",
+  "version": "0.0.1",
+  "description": "create JWT tokens",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "Rahul Rajesh",
+  "license": "ISC"
+}
