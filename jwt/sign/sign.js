@@ -1,4 +1,4 @@
-import crypto from 'crypto';
+import createHash from '../common/createHash.js';
 
 /**
  * This function signs a token with the given payload and key,
@@ -34,23 +34,3 @@ export const sign = (payload, key, { algorithm = "HS256", expiresIn, notBefore, 
 
   return token;
 };
-
-const createHash = (key, algorithm, data) => {
-  switch(algorithm) {
-    case 'HS256':
-      algorithm = 'sha256';
-      break;
-    case 'HS384':
-      algorithm = 'sha384';
-      break;
-    case 'HS512':
-      algorithm = 'sha512';
-      break;
-    default:
-      throw new Error('Algorithm not supported');
-  }
-
-  const hash = crypto.createHmac(algorithm, key);
-  hash.update(data);
-  return hash.digest('base64');
-}

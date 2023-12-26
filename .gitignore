@@ -1,1 +1,2 @@
-./jwt/node_modules
+/jwt/node_modules
+/node_modules

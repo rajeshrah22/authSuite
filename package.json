@@ -1,0 +1,18 @@
+{
+  "name": "authsuite",
+  "version": "0.0.1",
+  "description": "Suite of authentication and authorization tools",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rahul Rajesh",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}
