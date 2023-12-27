@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { sign } from '../../../src/jwt/sign.js';
+import { sign } from '../../../jwt/sign/sign.js';
 import { describe } from 'mocha';
 
 describe('sign', function() {

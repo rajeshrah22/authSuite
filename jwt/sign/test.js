@@ -1,4 +1,4 @@
-import { sign } from './sign.js';
+  import { sign } from './sign.js';
 import { verify } from '../verify/verify.js';
 
 const payload = {

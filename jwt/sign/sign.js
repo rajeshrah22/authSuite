@@ -28,7 +28,7 @@ export const sign = (payload, key, { algorithm = "HS256", expiresIn, notBefore, 
   };
 
   //setup crypto
-  const preHash = `${Buffer.from(JSON.stringify(header)).toString('base64')}.${Buffer.from(JSON.stringify(payload)).toString('base64')}`;
+  const preHash = `${Buffer.from(JSON.stringify(header)).toString('base64url')}.${Buffer.from(JSON.stringify(payload)).toString('base64url')}`;
   const signature = createHash(key, algorithm, preHash);
   const token = `${preHash}.${signature}`;
 

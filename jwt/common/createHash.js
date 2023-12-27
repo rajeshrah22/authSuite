@@ -17,7 +17,7 @@ const createHash = (key, algorithm, data) => {
 
   const hash = crypto.createHmac(algorithm, key);
   hash.update(data);
-  return hash.digest('base64');
+  return hash.digest('base64url');
 };
 
 export default createHash;
